@@ -1,0 +1,49 @@
+{
+	"base": "src/static",
+	"release": "src/release",
+	"scriptsCopy": {
+		"base": "src/static/scripts",
+		"dest": "src/release/scripts"
+	},
+	"scripts": {
+		"base": "src/static/scripts/",
+		"source": [
+			"libs/*.js",
+			"libs/dependencies/*.js",
+			"common/*.js",
+			"common/*/*.js",
+			"modules/*/*.js"
+		]
+	},
+	"sass": {
+		"source": "src/static/scss/*.scss",
+		"dest": "src/static"
+	},
+	"css": {
+		"base": "src/static",
+		"source": [
+			"src/static/*.css",
+			"src/static/*.css"
+		],
+		"dest": "src/release"
+	},
+	"html": {
+		"base": "src/static/",
+		"source": [
+			"src/static/index.html"
+		],
+		"dest": "src/release"
+	},
+	"templates": {
+		"base": "src/static/scripts/modules/*/*.html",
+		"dest": "src/release"
+	},
+	"images": {
+		"source": "src/static/images/**",
+		"dest": "src/release/images"
+	},
+	"fonts": {
+		"source": "src/static/fonts/**",
+		"dest": "src/release/fonts"
+	}
+}
